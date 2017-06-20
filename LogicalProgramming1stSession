@@ -1,0 +1,37 @@
+Q: You have been given a liost of indian citizens which contains ID, Name, Gender, Age Qualifications,City,State,Country ,Salary,Working Status,Employment Status,Maritial Status,
+Analysis to be done:
+A)Write the logic to Check male and female
+B)Write the Logic to Check how many citizen are GRADUATE
+C)Check how many Citizens have income of more than 1 Lakh Salary per month.
+D) Write the logic to check how many are married,widow and single.
+Analysis 
+A:-
+1)Start 
+2)List out the Citizens
+3)Check Which of the citizens are Male using the Gender property and maintain a count
+4)Check Which of the citizens are Female using the Gender property and maintain a count
+5)Display Both Counts.
+6) Stop
+
+B:-
+1) Start
+2)List out the Citizens
+3)Check the list on basis of Qualification and count the no of GRADUATES.
+4) Display the Count.
+5)Stop
+
+C:-
+1) Start
+2)List out the Citizens.
+3)Check the number of Citizens with a salary of 1Lakh or higher and maintain a count of it
+4)Display the Counts as the result.
+5)Stop
+
+D:-
+1) Start
+2) List out the Citizens.
+3) Check Which Citizens are Married using the " Maritial Status" and maintain a count.
+4) Check which Citizens are Single using the "Maritial Status" and maintain a count.
+5)Check Which Citizens are Widows using the "Maritial Status" and maintain a count.
+6)Display the Results
+7)Stop
