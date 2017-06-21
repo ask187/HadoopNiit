@@ -1,0 +1,63 @@
+Q: What are operators? Types of Operators?
+Q: What is a condition? different ways of implementing conditions.
+Q: What is looping ? What are different ways of implementing looping?
+Q: What is function ? how to implement functions in a program ?
+Q: what is a data type? What are the different types of data types in a program?
+
+Answers:
+
+1:
+An operator in a programming language is a symbol that tells the compiler or interpreter to perform specific mathematical, 
+relational or logical operation and produce final result.
+
+Types of Operators:
+a)Arithmetic Operators
+Computer programs are widely used for mathematical calculations.
+b)Relational Operators
+Operators that are used to compare values
+
+2:
+An if statement can be followed by an optional else if...else statement, which is very useful to test various conditions using
+single if...else if statement.
+
+When using if, else if, else statements there are a few points to keep in mind.
+An if can have zero or one else's and it must come after any else if's.
+An if can have zero to many else if's and they must come before the else.
+Once an else if succeeds, none of the remaining else if's or else's will be tested.
+
+Conditions can be implemented using If else if Statements or even Loops (while , for , do-while etc)
+
+
+3:
+A loop statement allows us to execute a statement or group of statements multiple times 
+ Different Types of loops :
+ -While loop
+ -Do-while loop
+ -For loop
+ 
+ 4:
+ A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better 
+ modularity for your application and a high degree of code reusing.
+ 
+ Syntax 
+ AccessSpecifier ReturnType functionName (parameterName)
+ {
+ //body of the function
+ }
+ obj.functionname();
+ 
+ 5:
+ Data types represent the different values to be stored in the variable. In java, there are two types of data types:
+
+-Primitive data types
+  There are eight primitive datatypes supported by Java. Primitive datatypes are predefined by the language and named by a keyword.
+  eg:byte,Long,int,float,double etc.
+
+-Non-primitive data types
+  Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are 
+  declared to be of a specific type that cannot be changed. For example, Employee, Puppy, etc. Class objects and various type of array variables come under reference datatype.
+  Default value of any reference variable is null. A reference variable can be used to refer any object of the declared type or any compatible type.
+
+    eg: strings and array
+ 
+ 
