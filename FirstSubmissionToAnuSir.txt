@@ -1,0 +1,465 @@
+Student :Aravind Santhosh Kumar NIIT Tnagar Center 
+
+//Logical Building and Effective Problem Solving//
+
+Q: You have been given a liost of indian citizens which contains ID, Name, Gender, Age Qualifications,City,State,Country ,Salary,Working Status,Employment Status,Maritial Status,
+Analysis to be done:
+A)Write the logic to Check male and female
+B)Write the Logic to Check how many citizen are GRADUATE
+C)Check how many Citizens have income of more than 1 Lakh Salary per month.
+D) Write the logic to check how many are married,widow and single.
+Analysis 
+A:-
+1)Start 
+2)List out the Citizens
+3)Check Which of the citizens are Male using the Gender property and maintain a count
+4)Check Which of the citizens are Female using the Gender property and maintain a count
+5)Display Both Counts.
+6) Stop
+
+B:-
+1) Start
+2)List out the Citizens
+3)Check the list on basis of Qualification and count the no of GRADUATES.
+4) Display the Count.
+5)Stop
+
+C:-
+1) Start
+2)List out the Citizens.
+3)Check the number of Citizens with a salary of 1Lakh or higher and maintain a count of it
+4)Display the Counts as the result.
+5)Stop
+
+D:-
+1) Start
+2) List out the Citizens.
+3) Check Which Citizens are Married using the " Maritial Status" and maintain a count.
+4) Check which Citizens are Single using the "Maritial Status" and maintain a count.
+5)Check Which Citizens are Widows using the "Maritial Status" and maintain a count.
+6)Display the Results
+7)Stop
+
+Q: What are operators? Types of Operators?
+Q: What is a condition? different ways of implementing conditions.
+Q: What is looping ? What are different ways of implementing looping?
+Q: What is function ? how to implement functions in a program ?
+Q: what is a data type? What are the different types of data types in a program?
+
+Answers:
+
+1:
+An operator in a programming language is a symbol that tells the compiler or interpreter to perform specific mathematical, 
+relational or logical operation and produce final result.
+
+Types of Operators:
+a)Arithmetic Operators
+Computer programs are widely used for mathematical calculations.
+b)Relational Operators
+Operators that are used to compare values
+
+2:
+An if statement can be followed by an optional else if...else statement, which is very useful to test various conditions using
+single if...else if statement.
+
+When using if, else if, else statements there are a few points to keep in mind.
+An if can have zero or one else's and it must come after any else if's.
+An if can have zero to many else if's and they must come before the else.
+Once an else if succeeds, none of the remaining else if's or else's will be tested.
+
+Conditions can be implemented using If else if Statements or even Loops (while , for , do-while etc)
+
+
+3:
+A loop statement allows us to execute a statement or group of statements multiple times 
+ Different Types of loops :
+ -While loop
+ -Do-while loop
+ -For loop
+ 
+ 4:
+ A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better 
+ modularity for your application and a high degree of code reusing.
+ 
+ Syntax 
+ AccessSpecifier ReturnType functionName (parameterName)
+ {
+ //body of the function
+ }
+ obj.functionname();
+ 
+ 5:
+ Data types represent the different values to be stored in the variable. In java, there are two types of data types:
+
+-Primitive data types
+  There are eight primitive datatypes supported by Java. Primitive datatypes are predefined by the language and named by a keyword.
+  eg:byte,Long,int,float,double etc.
+
+-Non-primitive data types
+  Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are 
+  declared to be of a specific type that cannot be changed. For example, Employee, Puppy, etc. Class objects and various type of array variables come under reference datatype.
+  Default value of any reference variable is null. A reference variable can be used to refer any object of the declared type or any compatible type.
+
+    eg: strings and array
+ 
+ //Java Programming //
+ 
+ Q) Write a program to accept employee details and based on salary calculate the bonus and fis new salary
+ 
+  
+import java.util.Scanner;
+
+public class employeeBonus {
+	String empName;
+	double empSal;
+	double bonus;
+	void getDetails()
+	{
+		Scanner in= new Scanner(System.in);
+		System.out.println("Enter the Employee Name");
+		empName=in.next();		
+		System.out.println("Enter the Employee Salary");
+		empSal=in.nextDouble();
+		
+	}
+	void bonusCal()
+	{
+		if(empSal==10000)
+		{
+			bonus=0.3*empSal;
+		}
+		else
+			if(empSal==50000)
+			{
+				bonus=0.2*empSal;
+			}
+			else
+				if(empSal==100000)
+				{
+					bonus=0.1*empSal;
+				}
+		empSal=bonus+empSal;
+		System.out.println("The new salary is "+ empSal);
+		
+	}
+	public static void main(String args[])
+	{
+		employeeBonus A= new employeeBonus();
+		A.getDetails();
+		A.bonusCal();
+	}
+
+}
+ Q) Write a program to accept a string and display the last character of the string without using ready made string functions?
+
+	public static void main(String [] args)
+	{
+		String name;
+		int count;
+		System.out.println("enter the string");
+		Scanner sin =new Scanner (System.in)
+		name=sin.next();
+		chat ch[]=name.toCharArray();
+		count=name.length();
+		System.out.println("The last character is "+ name.charAt(count-1));
+		
+	}
+Q)Write a Program to Perform Aritmetic Operations
+
+	
+
+import java.util.Scanner;
+
+public class Arithmetics {
+	 
+	
+	
+	 static int add()
+	{
+		int a,b;
+		System.out.println("Addition Function");
+		Scanner in =new Scanner(System.in);
+		System.out.println("Enter the first number");
+		a=in.nextInt();
+		System.out.println("Enter the Second number");
+		b=in.nextInt();
+	
+		return a+b;		
+		
+	}
+	 static int subtract()
+	{	
+		 Scanner in =new Scanner(System.in);
+		 System.out.println("Subtraction Function");
+		int a,b;
+		System.out.println("Enter the first number");
+		a=in.nextInt();
+		System.out.println("Enter the Second number");
+		b=in.nextInt();
+		
+		return a-b;	
+	}
+	  static int multiply()
+	{
+		  Scanner in =new Scanner(System.in);
+		  System.out.println("Multiplication Function");
+		int a,b;
+		System.out.println("Enter the first number");
+		a=in.nextInt();
+		System.out.println("Enter the Second number");
+		b=in.nextInt();
+		
+		return a*b;	
+	}
+	 static double divide()
+	{
+		 Scanner in =new Scanner(System.in);
+		 System.out.println("Division Function");
+		int a,b;
+		System.out.println("Enter the first number");
+		a=in.nextInt();
+		System.out.println("Enter the Second number");
+		b=in.nextInt();
+		
+		return a/b;	
+	}
+	public static void main(String args[])
+	{
+		int a,b,c;
+		double d;
+		a=Arithmetics.add();
+		b=Arithmetics.subtract();
+		c=Arithmetics.multiply();
+		d=Arithmetics.divide();
+		System.out.println("The sum is "+ a);
+		System.out.println("The difference is "+ b);
+		System.out.println("The product is "+ c);
+		System.out.println("The quotient is "+ d);
+		
+		
+		
+	}
+
+}
+
+Q) Write a Program to Accept a String and Replace third character with 'T' without using readymade functions
+
+
+public class Replace {
+	public static void main(String args[]) {
+		 String name;
+	      System.out.println("enter the string");
+              Scanner in=new Scanner(System.in);
+              name=in.next();
+              char ch[]=name.toChatArray();
+              ch[3]='t';
+              int count=name.length();
+              for(int i=0;i<count;i++){
+               System.out.println(ch[i]);
+
+	}
+
+}
+
+Q)Write a program to accept a string and check wheather 3rd character of string is "s" or not without using a readymade atring functions?
+
+
+import java.util.Scanner;
+public class wordChecker {
+	public static void main(String args[])
+	{  
+		 Scanner in =new Scanner(System.in); 
+		 System.out.println("enter the string");
+		String find =in.next();
+		
+		
+		char[] word = find.toCharArray();
+		
+		if(word[2] == 's'){
+			System.out.println("It Contains ");
+		} else{
+			System.out.println("It Does Not Contain ");
+		}
+		
+	}
+
+}
+Q)Write a program to find the higest number with only conditional operations
+
+
+import java.util.Scanner;
+
+public class highestNumber {
+	int number1;
+	int number2;
+	int number3;
+	int highest;
+	void function()
+	{
+		System.out.println("enter the number 1");
+		Scanner in = new Scanner(System.in);
+		number1 = in.nextInt();
+		System.out.println("enter the number 2");
+
+		number2 = in.nextInt();
+		System.out.println("enter the number 3");
+		
+		number3 = in.nextInt();
+	}
+	void compare()
+	{
+		if(number1>=number2 && number1>=number3)
+		{
+			highest=number1;
+		}
+		else
+			if(number2>=number1 && number2>=number1)
+			{
+				highest=number2;
+			}
+			else
+				if(number3>=number1 && number3>=number3)
+				{
+					highest=number3;
+				}
+		System.out.println("the greatest number is "+ highest);
+	}
+	public static void main(String args[]){
+		highestNumber a= new highestNumber();
+		a.function();
+		a.compare();
+		
+	}
+}
+
+Q)Write a program to accept 10 numbers and display the total number of count greater than 10?
+
+import java.util.Scanner;
+public class Count {
+	static Scanner c = new Scanner(System.in);
+	public static void main (String a[]){
+		int no;
+		int max=0;
+
+		{
+			System.out.println("enter the no");
+			no=c.nextInt();
+			max=0;
+			if(no>=10)
+			{
+				max=max+1;
+				System.out.println(max);
+			}
+		}
+	}
+
+}
+
+Q)Write a program to accept the student information and check how many students are above the age of 21
+
+import java.util.Scanner;
+
+
+public class StudentInformation {
+
+	String StudId;
+	String StudName;
+	int StudAge;
+	String StudCity;
+	
+	void getDetails(){
+		
+		Scanner s= new Scanner(System.in);
+		int totalStudentsAbove21=0;
+		System.out.println("enter Student Id");
+		StudId=s.next();
+		System.out.println("enter Student Name");
+		StudName=s.next();
+		System.out.println("enter Student Age");
+		StudAge=s.nextInt();
+		System.out.println("enter City");
+		StudCity=s.next();
+		if(StudAge>21)
+		{
+			totalStudentsAbove21++;
+			
+		}
+		System.out.println(StudId+"\n"+StudName+"\n"+StudAge+"\n"+StudCity);
+		System.out.println("The no of studenst above 21 is "+ totalStudentsAbove21);
+	}
+
+	public static void main(String Args[])
+	{
+		StudentInformation N= new StudentInformation();
+		N.getDetails();
+		N.getDetails();
+	}
+}
+
+Q)Write a program to accept a string and replace third character with "T" without using readymade functions?
+
+
+public class Replace {
+	public static void main(String args[]) {
+		 String word=new String("enter the characters");
+
+	      System.out.println(word.modify('e','T'));
+
+	}
+
+}
+Q) Write a program to accept the employee details and calculate the maximum and minimum Salary .
+
+
+import java.util.Scanner;
+
+public class employeeMinMaxSal {
+String empName;
+String empId;
+int empAge;
+double empSal;
+String empDept;
+ 
+void getDetails()
+{
+	Scanner in = new Scanner(System.in);
+	System.out.println("Enter the Name");
+	empName=in.next();
+	System.out.println("Enter the id");
+	empId=in.next();
+	System.out.println("Enter the age");
+	empAge=in.nextInt();
+	System.out.println("Enter the Salary");
+	empSal=in.nextDouble();
+	System.out.println("Enter the Department");
+	empDept=in.next();
+	
+	
+}
+double getSal()
+{
+	return empSal;
+}
+public static void main(String args[])
+{
+	employeeMinMaxSal e= new employeeMinMaxSal();
+	int i;
+	double minSal=1000000,maxSal=0,Salary;
+	for(i=0;i<3;i++)
+	{
+		e.getDetails();
+		Salary=e.getSal();
+		if(minSal>Salary)
+		{
+			minSal=Salary;
+		}
+		if(maxSal<Salary)
+		{
+			maxSal=Salary;
+		}
+	}
+	System.out.println("The Minimum Salary is "+ minSal);
+	System.out.println("The Maximum Salary is"+ maxSal);
+}	
+
+}
